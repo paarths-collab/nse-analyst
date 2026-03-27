@@ -1,0 +1,13 @@
+# NSE Filing Quant Analyst Edition — Dependencies
+
+# CloudFlare bypass for NSE API access
+cloudscraper>=1.1.0
+
+# PDF text extraction
+PyMuPDF>=1.23.0
+
+# Groq LLM & Web Search API
+groq>=0.10.0
+
+# Telegram notifications (optional)
+python-telegram-bot>=21.0
