@@ -13,6 +13,9 @@ venv/
 
 *.log
 
+data/cache/
+data/json/
+
 pdfs/
 processed.json
 seen_live_scraper.json

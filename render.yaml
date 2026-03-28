@@ -1,0 +1,56 @@
+services:
+  - type: worker
+    name: news-scrape-unified-pipeline
+    env: python
+    plan: starter
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: python scripts/unified_news_filings_pipeline.py
+    autoDeploy: true
+    disk:
+      name: news-scrape-data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 5
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: PIPELINE_CONTINUOUS
+        value: true
+      - key: PIPELINE_POLL_SECONDS
+        value: 60
+      - key: PIPELINE_SEND_TELEGRAM
+        value: true
+      - key: PIPELINE_MODEL
+        value: openai/gpt-oss-120b
+      - key: PIPELINE_REGISTRY
+        value: sources/sources_registry.json
+      - key: PIPELINE_SHARD
+        value: 1
+      - key: PIPELINE_LIVE_ONLY
+        value: true
+      - key: PIPELINE_NEWS_MAX_ITEMS
+        value: 2
+      - key: PIPELINE_NEWS_CONCURRENCY
+        value: 5
+      - key: PIPELINE_FILINGS_HOURS
+        value: 1
+      - key: PIPELINE_FILINGS_MAX_ITEMS
+        value: 5
+      - key: PIPELINE_MAX_ANALYSIS
+        value: 10
+      - key: PIPELINE_OUTPUT
+        value: data/json/unified_pipeline_output_live.json
+      - key: PIPELINE_SEEN_STATE
+        value: data/cache/unified_seen_events.json
+      - key: PIPELINE_SEEN_MAX
+        value: 50000
+      - key: PIPELINE_MAX_LOOPS
+        value: 0
+      - key: GROQ_API_KEY
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: OPENFIGI_API_KEY
+        sync: false

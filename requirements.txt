@@ -11,3 +11,19 @@ groq>=0.10.0
 
 # Telegram notifications (optional)
 python-telegram-bot>=21.0
+
+# Stream pipeline foundations
+psycopg[binary]>=3.2.0
+redis>=5.0.0
+
+# JS-rendered source fallback scraping
+playwright>=1.58.0
+
+# Enhanced scraping and parsing
+feedparser>=6.0.0
+beautifulsoup4>=4.12.0
+httpx>=0.25.0
+httpx>=0.27.0
+
+# Market data follow-through analysis
+yfinance>=0.2.54

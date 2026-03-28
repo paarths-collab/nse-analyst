@@ -1,0 +1,92 @@
+[
+  {
+    "source_id": "reuters_business",
+    "name": "Reuters Business",
+    "mode": "rss",
+    "url": "http://feeds.reuters.com/reuters/businessNews",
+    "shard": 1,
+    "is_live": true,
+    "trust_tier": 1
+  },
+  {
+    "source_id": "et_markets",
+    "name": "Economic Times Markets",
+    "mode": "rss",
+    "url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
+    "shard": 1,
+    "is_live": true,
+    "trust_tier": 1
+  },
+  {
+    "source_id": "moneycontrol_business",
+    "name": "Moneycontrol Business",
+    "mode": "rss",
+    "url": "https://www.moneycontrol.com/rss/business.xml",
+    "shard": 1,
+    "is_live": true,
+    "trust_tier": 1
+  },
+  {
+    "source_id": "businessline_markets",
+    "name": "BusinessLine Markets",
+    "mode": "rss",
+    "url": "https://www.thehindubusinessline.com/markets/feeder/default.rss",
+    "shard": 1,
+    "is_live": true,
+    "trust_tier": 1
+  },
+  {
+    "source_id": "mint_markets",
+    "name": "Mint Markets",
+    "mode": "rss",
+    "url": "https://www.livemint.com/rss/markets",
+    "shard": 1,
+    "is_live": true,
+    "trust_tier": 1
+  },
+  {
+    "source_id": "cnbctv18_markets",
+    "name": "CNBC TV18 Markets",
+    "mode": "html",
+    "url": "https://www.cnbctv18.com/market/",
+    "shard": 1,
+    "is_live": true,
+    "trust_tier": 1
+  },
+  {
+    "source_id": "investing_india",
+    "name": "Investing India News",
+    "mode": "html",
+    "url": "https://in.investing.com/news/stock-market-news",
+    "shard": 1,
+    "is_live": true,
+    "trust_tier": 2
+  },
+  {
+    "source_id": "business_standard_markets",
+    "name": "Business Standard Markets",
+    "mode": "html",
+    "url": "https://www.business-standard.com/markets",
+    "shard": 1,
+    "is_live": true,
+    "trust_tier": 1
+  },
+  {
+    "source_id": "financial_express_markets",
+    "name": "Financial Express Markets",
+    "mode": "html",
+    "url": "https://www.financialexpress.com/market/",
+    "shard": 1,
+    "is_live": true,
+    "trust_tier": 1
+  },
+  {
+    "source_id": "nse_home",
+    "name": "NSE India",
+    "mode": "html",
+    "url": "https://www.nseindia.com/",
+    "shard": 1,
+    "is_live": true,
+    "trust_tier": 1
+  }
+]
