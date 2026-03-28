@@ -15,6 +15,7 @@ venv/
 
 data/cache/
 data/json/
+*.db
 
 pdfs/
 processed.json
